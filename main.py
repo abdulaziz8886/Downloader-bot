@@ -27,7 +27,7 @@ async def Yuklabot(message: Message):
             filename = vida.prepare_filename(info)
         video1 = FSInputFile(filename)
         await message.answer_video(video=video1, caption="Mana marxamat sizning videoningiz !")
-        os.remove(video1)
+        os.remove(filename)
     except:
         await message.answer(' Afsuski Topilmadi')
 
